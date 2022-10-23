@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #374e70;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.primeira{
+    width: 450px;
+    height: 580px;
+    border-radius: 5px;
+    background-color: white;
+}
+img{
+    width: 100px;
+    height: 90px;
+}
+
+.segunda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.texto{
+    text-align: center;
+    margin: 40px;
+    color: #676566;
+}
+.texto2{
+    text-align: center;
+    color: #363636;
+}
+span{
+    color: red;
+}
+.formulario{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+    font-size: 14px;
+}
+.formulario input{
+    width: 360px;
+    height: 40px;
+    border-radius: 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #e8f0fd;
+    background-color: #e8f0fd;
+}
+.formulario label{
+    position: relative;
+    top: 7px;
+    color: #939496
+}
+
+.formulario input:focus{
+    outline: 0;
+}
+
+.checkbox{
+    position: relative;
+    /*left: 42px;
+    top: 29px;*/
+    width: 90px; 
+    margin-left: 43px;
+    margin-top: 29px;
+    color: #616263;
+}
+.checkbox input{
+    display: none;
+}
+.checkbox input + label::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #7c7c7c;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    
+}
+.checkbox input:checked + label::before{
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='22' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #7c7c7c;;
+    background-position: center;
+}
+.spann{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    left: 200px;
+    top: -25px;
+    width: 200px;
+    height: 20px;
+}
+.spann a{
+    color: #7c7c7c;
+    text-decoration: none;
+}
+/*#botao{
+    position:relative; 
+    height: 35px;
+    width: 301px;
+    left: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+} */
+
+.botao{
+    text-align: center;
+    margin-top: 5px;
+}
+.botao input{
+    width: 360px;
+    height: 43px;
+    cursor: pointer;
+    background-color: #374e70;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+}
+.botao input:hover{
+    background-color: #2e415c;
+    color: #dad8d8;
+}
